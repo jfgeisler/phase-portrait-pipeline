@@ -1,0 +1,10 @@
+/Users/jgeisler/Documents/Master_Thesis/Coding/Book_Chapter
+
+/Applications/ilastik.app/Contents/MacOS
+ilastik
+/Applications/Fiji_local.app/Contents/MacOS
+ImageJ-macosx
+/Users/jgeisler/Documents/Master_Thesis/Coding/PhasePortait
+fijiBatchTrack.py
+/Users/jgeisler/Documents/Master_Thesis/DataAnalysis/Trial
+MyProject.ilp
