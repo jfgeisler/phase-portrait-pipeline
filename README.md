@@ -1,4 +1,4 @@
-# Mass Balance Imagingn Pipeline 
+# Mass Balance Imaging Pipeline 
 # Image Analysis Pipeline User Manual
 The pipeline was tested on MacOS 11.4, but the general structure of calls of Fiji/ImageJ and ilastik should stay the same and usable on MacOS and Linux. 
 
