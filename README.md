@@ -53,7 +53,7 @@ This allows for easily recalculation, and keeping track of your analysis on diff
         - seperate channels multiplied with the mask. For intensity measurements in *channels*
         - All channels and the mask merged in one file, where channel one is the simple segmentation in *merged*
 - results
-    - results of the supplied files can be found here. For the TrackMate script the output is a txt file with . If you want other measures, too, the easiest point of adaptation is [regionprops.](https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops). From the available attributes you can choose freely.
+    - Results of the supplied files can be found here. For the TrackMate script the output is a txt file with . If you want other measures, too, the easiest point of adaptation is [regionprops.](https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops). From the available attributes you can choose freely.
     - Phase portraits are stored in this folder, too. 
  
  
