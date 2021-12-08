@@ -3,22 +3,21 @@
 The pipeline was tested on MacOS 11.4, but the general structure of calls of Fiji/ImageJ and ilastik should stay the same and usable on MacOS and Linux. 
 
 ## Prerequisites are recent versions of 
-- conda
+- anaconda
 - Fiji
 - ilastik
 - (in some cases) JDK 8+
-- Install the pipeline in an environment.
+- We recommend installing the pipeline in a seperate environment.
 - The environment can be installed with the environment_pipe.yml file provided in the folder above.
 
 ### Installation of the environment
-With a conda installation you should follow [this guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) to install the environment in which all packages are preinstalled.
+With a conda installation you should follow [this guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) to install the environment in which all packages are preinstalled. Alternatively the installation can be performed by install the environment in the environments tab in Anaconda.
 
 ## What is needed in order to run the pipeline?
 - A macro in fiji/imageJ including saving the data that runs TrackMate (provided).
 - An ilastik project file (also provided).
 
-The Ilastik project file should only be moved together with the training data set. If not, it might not work properly. 
-
+When moving the Ilastik project file be mindful of the dependency on the training data storage/filepath. 
 
 The pipeline setup is stored automatically in two files. PipelineDataSettings.txt and PipelineSettings.csv.
 
@@ -34,7 +33,7 @@ In the latter your settings for TrackMate are stored.
 This allows for easily recalculation, and keeping track of your analysis on different datasets.
 
 ## What type of data has to be supplied?
-- (Flourescent) Movie/Image data with two channels in .tiff format.
+- (Flourescent) Movie/Image data with two channels in .tiff format, where segmentation with ilastik is possible. If other segementations are required, the segmentation can be modified to individual needs. 
 - The file should fit in your RAM. If it does not, Ilastik will slow down significantly. You may want to try and run the pipeline on a server. For this you could use [these instructions](https://techtalktone.wordpress.com/2017/03/28/running-jupyter-notebooks-on-a-remote-server-via-ssh/).
 
 ### All files will be automatically sorted and put in folders after the initial .tiff files are supplied. The files for which a phase portrait is plotted can be selected before starting the pipeline. 
@@ -49,7 +48,7 @@ This allows for easily recalculation, and keeping track of your analysis on diff
 - maskStacks
     - The merged sequences are stored in this folder.
     - Subfolders include:
-        - summed channels in *sum*
+        - both channels added into one image/movie in *sum*
         - seperate channels multiplied with the mask. For intensity measurements in *channels*
         - All channels and the mask merged in one file, where channel one is the simple segmentation in *merged*
 - results
